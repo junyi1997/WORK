@@ -17,16 +17,16 @@ def motor_1():
         a=GPIO.input(in1_pin)
         if a ==1:
             print("1啟動")
-            GPIO.output(ou1_pin,GPIO.LOW)
-            GPIO.output(ou2_pin,GPIO.LOW)
-            GPIO.output(ou3_pin,GPIO.HIGH)
-            GPIO.output(ou4_pin,GPIO.HIGH)
+            GPIO.output(ou1_pin,GPIO.HIGH)
+            GPIO.output(ou2_pin,GPIO.HIGH)
+            GPIO.output(ou3_pin,GPIO.LOW)
+            GPIO.output(ou4_pin,GPIO.LOW)
             my_main()
         elif a==0:
-            GPIO.output(ou1_pin,GPIO.LOW)
-            GPIO.output(ou2_pin,GPIO.HIGH)
-            GPIO.output(ou3_pin,GPIO.HIGH)
-            GPIO.output(ou4_pin,GPIO.LOW)
+            GPIO.output(ou1_pin,GPIO.HIGH)
+            GPIO.output(ou2_pin,GPIO.LOW)
+            GPIO.output(ou3_pin,GPIO.LOW)
+            GPIO.output(ou4_pin,GPIO.HIGH)
             
 
 def motor_2():
@@ -35,16 +35,16 @@ def motor_2():
         b=GPIO.input(in2_pin)
         if b ==1:
             print("2啟動")
-            GPIO.output(ou1_pin,GPIO.HIGH)
-            GPIO.output(ou2_pin,GPIO.HIGH)
-            GPIO.output(ou3_pin,GPIO.LOW)
-            GPIO.output(ou4_pin,GPIO.LOW)
+            GPIO.output(ou1_pin,GPIO.LOW)
+            GPIO.output(ou2_pin,GPIO.LOW)
+            GPIO.output(ou3_pin,GPIO.HIGH)
+            GPIO.output(ou4_pin,GPIO.HIGH)
             my_main()
         elif b==0:
-            GPIO.output(ou1_pin,GPIO.HIGH)
-            GPIO.output(ou2_pin,GPIO.LOW)
-            GPIO.output(ou3_pin,GPIO.LOW)
-            GPIO.output(ou4_pin,GPIO.HIGH)
+            GPIO.output(ou1_pin,GPIO.LOW)
+            GPIO.output(ou2_pin,GPIO.HIGH)
+            GPIO.output(ou3_pin,GPIO.HIGH)
+            GPIO.output(ou4_pin,GPIO.LOW)
     
 def motor_3():
     print("進入桶3")
@@ -52,16 +52,18 @@ def motor_3():
         c=GPIO.input(in3_pin)
         if c ==1:
             print("3啟動")
-            GPIO.output(ou1_pin,GPIO.HIGH)
-            GPIO.output(ou2_pin,GPIO.HIGH)
-            GPIO.output(ou3_pin,GPIO.LOW)
-            GPIO.output(ou4_pin,GPIO.LOW)
+            GPIO.output(ou1_pin,GPIO.LOW)
+            GPIO.output(ou2_pin,GPIO.LOW)
+            GPIO.output(ou3_pin,GPIO.HIGH)
+            GPIO.output(ou4_pin,GPIO.HIGH)
+            
             my_main()
         elif c ==0:
-            GPIO.output(ou1_pin,GPIO.HIGH)
-            GPIO.output(ou2_pin,GPIO.LOW)
-            GPIO.output(ou3_pin,GPIO.LOW)
-            GPIO.output(ou4_pin,GPIO.HIGH)
+            GPIO.output(ou1_pin,GPIO.LOW)
+            GPIO.output(ou2_pin,GPIO.HIGH)
+            GPIO.output(ou3_pin,GPIO.HIGH)
+            GPIO.output(ou4_pin,GPIO.LOW)
+            
     
 def my_main():
     w=eval(input("第幾個分類桶"))
