@@ -15,14 +15,14 @@ def motor_1():
     print("進入桶1")
     while True:
         a=GPIO.input(in1_pin)
-        if (a ==1):
+        if a ==1:
             print("1啟動")
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.HIGH)
             GPIO.output(ou3_pin,GPIO.LOW)
             GPIO.output(ou4_pin,GPIO.LOW)
             my_main()
-        elif (a==0):
+        elif a==0:
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.LOW)
             GPIO.output(ou3_pin,GPIO.LOW)
@@ -32,14 +32,14 @@ def motor_2():
     print("進入桶2")
     while True:
         b=GPIO.input(in2_pin)
-        if (b ==1):
+        if b ==1:
             print("2啟動")
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.HIGH)
             GPIO.output(ou3_pin,GPIO.LOW)
             GPIO.output(ou4_pin,GPIO.LOW)
             my_main()
-        elif (b==0):
+        elif b==0:
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.LOW)
             GPIO.output(ou3_pin,GPIO.LOW)
@@ -49,14 +49,14 @@ def motor_3():
     print("進入桶3")
     while True:
         c=GPIO.input(in3_pin)
-        if (c ==1):
+        if c ==1:
             print("3啟動")
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.HIGH)
             GPIO.output(ou3_pin,GPIO.LOW)
             GPIO.output(ou4_pin,GPIO.LOW)
             my_main()
-        elif (c ==0):
+        elif c ==0:
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.LOW)
             GPIO.output(ou3_pin,GPIO.LOW)
@@ -65,13 +65,13 @@ def motor_3():
 def my_main():
     w=input("第幾個分類桶")
     print("w=",w)
-    if (w == 1):
+    if w == 1:
         print("選擇桶1")
         motor_1()
-    elif( w == 2):
+    elif w == 2:
         print("選擇桶2")
         motor_2()
-    elif (w == 3):
+    elif w == 3:
         print("選擇桶3")
         motor_3()
 def test():
