@@ -12,6 +12,7 @@ b=0
 c=0
 w=0
 def motor_1():
+    print("選擇桶1")
     while True:
         a=GPIO.input(in1_pin)
         if a ==1:
@@ -28,6 +29,7 @@ def motor_1():
             GPIO.output(ou4_pin,GPIO.HIGH)
 
 def motor_2():
+    print("選擇桶2")
     while True:
         b=GPIO.input(in2_pin)
         if b ==1:
@@ -44,6 +46,7 @@ def motor_2():
             GPIO.output(ou4_pin,GPIO.HIGH)
     
 def motor_3():
+    print("選擇桶3")
     while True:
         c=GPIO.input(in3_pin)
         if c ==1:
@@ -90,8 +93,8 @@ if __name__=='__main__':
     GPIO.setup(ou3_pin, GPIO.OUT)
     GPIO.setup(ou4_pin, GPIO.OUT)
     
-    #my_main()
-    test()
+    my_main()
+    #test()
     
    
 #上面程式是利用 SpeechRecognition 模組中的 recognixe_google() 函數透過 Google 語音辨識 API 來將麥克風收到的語音物件 audio 辨識成指定語系的文字 :
