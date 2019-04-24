@@ -67,7 +67,12 @@ def my_main():
         motor_2()
     elif w==3:
         motor_3()
-    
+def test():
+    while TrueL:
+        a=GPIO.input(in1_pin)
+        print("a=",a)
+        time.sleep(1)
+
 if __name__=='__main__':
     print("程式開始")
     GPIO.setwarnings(False)
