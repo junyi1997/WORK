@@ -60,14 +60,13 @@ def motor_3():
             GPIO.output(ou4_pin,GPIO.HIGH)
     
 def my_main():
-    while True:
-        w=input("第幾個分類桶")
-        if w==1:
-            motor_1()
-        elif w==2:
-            motor_2()
-        elif w==3:
-            motor_3()
+    w=input("第幾個分類桶")
+    if w==1:
+        motor_1()
+    elif w==2:
+        motor_2()
+    elif w==3:
+        motor_3()
     
 if __name__=='__main__':
     print("程式開始")
