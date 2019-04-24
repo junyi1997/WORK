@@ -15,6 +15,7 @@ def motor_1():
     while True:
         a=GPIO.input(in1_pin)
         if a ==1:
+            print("1啟動")
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.HIGH)
             GPIO.output(ou3_pin,GPIO.LOW)
@@ -30,6 +31,7 @@ def motor_2():
     while True:
         b=GPIO.input(in2_pin)
         if b ==1:
+            print("2啟動")
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.HIGH)
             GPIO.output(ou3_pin,GPIO.LOW)
@@ -45,6 +47,7 @@ def motor_3():
     while True:
         c=GPIO.input(in3_pin)
         if c ==1:
+            print("3啟動")
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.HIGH)
             GPIO.output(ou3_pin,GPIO.LOW)
