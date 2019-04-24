@@ -18,15 +18,16 @@ def motor_1():
         if a ==1:
             print("1啟動")
             GPIO.output(ou1_pin,GPIO.LOW)
-            GPIO.output(ou2_pin,GPIO.HIGH)
-            GPIO.output(ou3_pin,GPIO.HIGH)
-            GPIO.output(ou4_pin,GPIO.LOW)
-            my_main()
-        elif a==0:
-            GPIO.output(ou1_pin,GPIO.LOW)
             GPIO.output(ou2_pin,GPIO.LOW)
             GPIO.output(ou3_pin,GPIO.HIGH)
             GPIO.output(ou4_pin,GPIO.HIGH)
+            my_main()
+        elif a==0:
+            GPIO.output(ou1_pin,GPIO.LOW)
+            GPIO.output(ou2_pin,GPIO.HIGH)
+            GPIO.output(ou3_pin,GPIO.HIGH)
+            GPIO.output(ou4_pin,GPIO.LOW)
+            
 
 def motor_2():
     print("進入桶2")
