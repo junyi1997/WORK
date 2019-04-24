@@ -71,6 +71,10 @@ def test():
     while True:
         a=GPIO.input(in1_pin)
         print("a=",a)
+        b=GPIO.input(in2_pin)
+        print("b=",b)
+        c=GPIO.input(in3_pin)
+        print("c=",c)
         time.sleep(1)
 
 if __name__=='__main__':
