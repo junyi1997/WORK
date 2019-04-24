@@ -56,7 +56,7 @@ def motor_3():
             GPIO.output(ou3_pin,GPIO.LOW)
             GPIO.output(ou4_pin,GPIO.LOW)
             my_main()
-        elif c==0:
+        elif c ==0:
             GPIO.output(ou1_pin,GPIO.HIGH)
             GPIO.output(ou2_pin,GPIO.LOW)
             GPIO.output(ou3_pin,GPIO.LOW)
@@ -65,13 +65,13 @@ def motor_3():
 def my_main():
     w=input("第幾個分類桶")
     print("w=",w)
-    if w==1:
+    if w == 1:
         print("選擇桶1")
         motor_1()
-    elif w==2:
+    elif w == 2:
         print("選擇桶2")
         motor_2()
-    elif w==3:
+    elif w == 3:
         print("選擇桶3")
         motor_3()
 def test():
