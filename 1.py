@@ -63,7 +63,7 @@ def motor_3():
             GPIO.output(ou4_pin,GPIO.HIGH)
     
 def my_main():
-    w=input("第幾個分類桶")
+    w=eval(input("第幾個分類桶"))
     print("w=",w)
     if w == 1:
         print("選擇桶1")
