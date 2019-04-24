@@ -64,6 +64,7 @@ def motor_3():
     
 def my_main():
     w=input("第幾個分類桶")
+    print("w=",w)
     if w==1:
         motor_1()
     elif w==2:
